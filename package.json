@@ -1,0 +1,35 @@
+{
+  "name": "BridgeCasa",
+  "description": "HomeKit supporto",
+  "version": "0.4.42",
+  "scripts": {
+    "dev": "DEBUG=* ./bin/homebridge -D -P example-plugins/ || true"
+  },
+  "author": {
+    "name": "Alessio Dirella"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/adtech99/bridgehome.git"
+  },
+  "bugs": {
+    "url": "http://github.com/adtech99/bridgehome/issues"
+  },
+  "license": "ISC",
+  "main": "lib/api.js",
+  "bin": {
+    "homebridge": "bin/homebridge"
+  },
+  "engines": {
+    "node": ">=4.3.2"
+  },
+  "preferGlobal": true,
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "commander": "2.8.1",
+    "hap-nodejs": "0.4.46",
+    "semver": "5.0.3",
+    "node-persist": "^0.0.8",
+    "qrcode-terminal": "^0.11.0"
+  }
+}
